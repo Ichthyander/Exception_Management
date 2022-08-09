@@ -14,7 +14,6 @@ namespace Task_1
     {
         static void Main(string[] args)
         {
-            //Объявление переменных перед блоком try для подстановки в условие catch-when
             int firstNum = 0;
             int secondNum = 0;
             int result = 0;
@@ -47,6 +46,7 @@ namespace Task_1
                         result = firstNum / secondNum;
                         break;
                     default:
+                        //Исключение для обработки неверного знака операции
                         throw new ArgumentException("Указана несуществующая или неподдерживаемая математическая операция!");
                 }
 
